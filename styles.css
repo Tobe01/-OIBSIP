@@ -1,7 +1,7 @@
 /* CSS codes for calculator project */
 
 body {
- height: 700px;
+ height: 600px;
  font-family: poppins;
 }
 
@@ -15,7 +15,7 @@ p {
  align-items: center;
  justify-content: center;
  margin: auto;
- height: 500px;
+ height: 600px;
 }
 
 .sub-container {
