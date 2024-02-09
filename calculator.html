@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tobechi's calculator app</title>
+  <link rel="stylesheet" href="calculator.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="Fonts-6/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="calculator.js"></script>
+</head>
+
+<body>
+
+  <section>
+    <main>
+      <div class="container">
+        <div class="sub-container">
+
+            <p class="js-result"></p>
+  
+          <section id="Operators">
+                <p>
+                  <button class="operators-buttons" onclick="
+                      calculation += '+';
+                      console.log(calculation);
+        
+                      result = document.querySelector('.js-result').innerHTML = calculation;
+                  "><span><i class="fa-solid fa-plus"></i></span></button>
+        
+                  <button class="operators-buttons" onclick="
+                      calculation += '-';
+                      console.log(calculation);
+        
+                      result = document.querySelector('.js-result').innerHTML = calculation;
+                  "><span><i class="fa-solid fa-minus"></i></span></button>
+        
+                  <button class="operators-buttons" onclick="
+                      calculation += '*';
+                      console.log(calculation);
+        
+                      result = document.querySelector('.js-result').innerHTML = calculation;
+                  "><span><i class="fa-solid fa-xmark"></i></span></button>
+        
+                  <button class="operators-buttons" onclick="
+                      calculation += '/';
+                      console.log(calculation);
+        
+                      result = document.querySelector('.js-result').innerHTML = calculation;
+                  "><span><i class="fa-solid fa-divide"></i></span></button>
+        
+                </p>
+          </section>
+        
+          <section id="Numbers">
+            <div class="numbers-container">
+              <div class="numbers-sub-container">
+                <p>
+                  <button class="buttons" onclick="
+                      calculation += 7;
+                      console.log(calculation);
+                          
+                      result = document.querySelector('.js-result').innerHTML = calculation;
+                  ">7</button>
+        
+                <button class="buttons" onclick="
+                    calculation += 8;
+                    console.log(calculation);
+                      
+                    result = document.querySelector('.js-result').innerHTML = calculation;
+                ">8</button>
+        
+                <button class="buttons" onclick="
+                    calculation += 9;
+                    console.log(calculation);
+                    
+                    result = document.querySelector('.js-result').innerHTML = calculation;
+                ">9</button>
+              </p>
+              <p>
+                <button class="buttons" onclick="
+                    calculation += 4;
+                    console.log(calculation);
+                    
+                    result = document.querySelector('.js-result').innerHTML = calculation;
+                ">4</button>
+        
+                <button class="buttons" onclick="
+                    calculation += 5;
+                    console.log(calculation);
+                    
+                    result = document.querySelector('.js-result').innerHTML = calculation;
+                ">5</button>
+        
+                <button class="buttons" onclick="
+                    calculation += 6;
+                    console.log(calculation);
+                    
+                    result = document.querySelector('.js-result').innerHTML = calculation;
+                ">6</button>
+              </p>
+              <p>
+                <button class="number1-button" onclick="
+                    calculation += 1;
+                    console.log(calculation);
+                    
+                    result = document.querySelector('.js-result').innerHTML = calculation;
+                ">1</button>
+        
+                <button class="buttons" onclick="
+                    calculation += 2;
+                    console.log(calculation);
+                    
+                    result = document.querySelector('.js-result').innerHTML = calculation;
+                ">2</button>
+        
+                  <button class="buttons" onclick="
+                      calculation += 0;
+                      console.log(calculation);
+                      
+                      result = document.querySelector('.js-result').innerHTML = calculation;
+                  ">3</button>
+                </p>
+                <p>
+                  <button class="dot-buttons" onclick="
+                          calculation += '.';
+                          console.log(calculation);
+        
+                          result = document.querySelector('.js-result').innerHTML = calculation;
+                  ">.</button>
+        
+                  <button class="buttons" onclick="
+                        calculation += '0';
+                        console.log(calculation);
+        
+                        result = document.querySelector('.js-result').innerHTML = calculation;
+                  ">0</button>
+        
+                  <button class="red-button" onclick="
+                        calculation = 0;
+                        console.log(calculation);
+        
+                        result = document.querySelector('.js-result').innerHTML = calculation;
+                  ">C</button>
+                </p>
+                </div>
+                <p>
+                  <button class="eval-button" onclick="
+                    calculation = eval(calculation);
+                    console.log(calculation);
+
+                    result = document.querySelector('.js-result').innerHTML = calculation;
+                    "><span><i class="fa-solid fa-equals"></i></span>
+                  </button>
+                </p>
+                </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </section>
+  
+</body>
+
+</html>
